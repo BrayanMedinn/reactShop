@@ -10,8 +10,9 @@ const ProductList = () => {
   return (
     <section className="main-container">
       <div className="ProductList">
-        {products.map((product) => (
+        {products.map((product, index) => (
           <ProductItem  product={product} key={product.id}/>
+          // console.log('id: ' + product.id + ' ' + 'index: ' + index)
         ))}
       </div>
     </section>
